@@ -8,8 +8,10 @@
     "@testing-library/user-event": "^12.8.3",
     "@types/jest": "^26.0.24",
     "@types/node": "^12.20.28",
+    "@types/puppeteer": "^5.4.4",
     "@types/react": "^17.0.28",
     "@types/react-dom": "^17.0.9",
+    "puppeteer": "^11.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -20,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --testPathIgnorePatterns=.*e2e.test.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
