@@ -10,8 +10,8 @@ type Props = {
 export const ResumoItem = ({ titulo, value, color }: Props) => {
     return (
         <C.Container>
-            <C.Titulo>{titulo}</C.Titulo>
-            <C.Info color={color}>R${value}</C.Info>
+            <C.Titulo className="resumo-item-titulo" >{titulo}</C.Titulo>
+            <C.Info className="resumo-item-value" color={color}>R${value}</C.Info>
         </C.Container>
     );
 }
